@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #191c2b;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.introDiv {
+  margin: 100px;
+  width: 90%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.introDiv h1,
+p {
+  color: white;
+}
+
+.introDiv h1 {
+  font-size: 50px;
+}
+
+.introDiv p {
+  max-width: 700px;
+}
+
+.introDiv span {
+  color: #30ae64;
+}
+
+.btn-CV {
+  position: relative;
+}
+
+.main-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #30ae64;
+  padding: 15px 60px 15px 15px;
+  border-radius: 50px;
+}
+
+.btn-icon {
+  position: absolute;
+  right: 0px;
+  background-color: #30ae64;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon i {
+  color: white;
+}
+
+.theme-btn {
+  position: fixed;
+  background-color: #454d57;
+  right: 60px;
+  top: 93px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.theme-btn i {
+  text-align: center;
+  color: #79818c;
+  font-size: 25px;
+}
+
+.controls {
+  position: fixed;
+  right: 60px;
+  top: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.control {
+  background-color: #454d57;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.control i {
+  color: #79818c;
+  text-align: center;
+  font-size: 25px;
+}
+
+.active-btn {
+  background-color: #30ae64;
+}
+
+.active-btn i {
+  color: white;
+}
+
+/* --------------------- END OF SECTION 1---------------------- */
+
+.aboutDiv {
+  margin-top: 30px;
+}
+
+.aboutDiv > h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.aboutDiv span {
+  color: #30ae64;
+}
+
+.about-content {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  margin-left: 145px;
+  margin-right: 145px;
+}
+.about-content-left > h1 {
+  text-align: center;
+  color: white;
+}
+
+.about-content-left > p {
+  margin-top: 70px;
+  padding: 0 60px;
+  text-align: justify;
+}
+
+.about-content-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 40px;
+}
+
+.infoBox {
+  border: 1px solid rgba(128, 128, 128, 0.226);
+  width: 350px;
+}
+
+.infoBox h2 {
+  color: #30ae64;
+  font-size: 55px;
+  margin-left: 20px;
+}
+
+.infoBox h4 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.skills-content {
+  margin-left: 145px;
+  margin-right: 145px;
+}
+
+.skills-content h1 {
+  text-align: center;
+  color: white;
+}
+
+.skills-graph {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+}
+
+.title-bar > h5 {
+  color: white;
+  font-size: 22px;
+}
+
+.progress-skill-countent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-skill-countent > h5 {
+  color: rgba(175, 175, 175, 0.61);
+  font-size: 20px;
+}
+
+.bar {
+  background-color: white;
+  width: 60px;
+  width: 100%;
+}
