@@ -130,6 +130,8 @@ p {
 
 .aboutDiv {
   margin-top: 30px;
+  margin-left: 175px;
+  margin-right: 175px;
 }
 
 .aboutDiv > h1 {
@@ -150,8 +152,6 @@ p {
   grid-template-columns: 1fr 1fr;
   padding-top: 90px;
   padding-bottom: 50px;
-  margin-left: 145px;
-  margin-right: 145px;
 }
 .about-content-left > h1 {
   text-align: center;
@@ -168,12 +168,13 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  column-gap: 40px;
+  column-gap: 5px;
 }
 
 .infoBox {
   border: 1px solid rgba(128, 128, 128, 0.226);
-  width: 350px;
+  width: 280px;
+  height: 190px;
 }
 
 .infoBox h2 {
@@ -188,21 +189,19 @@ p {
   text-align: center;
 }
 
-.skills-content {
-  margin-left: 145px;
-  margin-right: 145px;
-}
-
-.skills-content h1 {
-  text-align: center;
-  color: white;
-}
+/* END OF ABOUT ME */
 
 .skills-graph {
   margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
+  column-gap: 20px;
+}
+
+.skills-content h1 {
+  text-align: center;
+  color: white;
 }
 
 .title-bar > h5 {
@@ -213,16 +212,129 @@ p {
 .progress-skill-countent {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .progress-skill-countent > h5 {
   color: rgba(175, 175, 175, 0.61);
   font-size: 20px;
+  padding: 5px;
 }
 
-.bar {
-  background-color: white;
-  width: 60px;
+.skillBar {
+  position: relative;
   width: 100%;
+  height: 10px;
+  background-color: #454e56;
+}
+
+.bar85 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 85%;
+  background-color: #30ae64;
+}
+
+.bar80 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  background-color: #30ae64;
+}
+
+.bar75 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  background-color: #30ae64;
+}
+
+.bar70 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  background-color: #30ae64;
+}
+
+.bar60 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60%;
+  background-color: #30ae64;
+}
+
+.bar40 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #30ae64;
+}
+
+.bar30 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background-color: #30ae64;
+}
+
+/* END OF SKILLS */
+
+.experinceTitle {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+  padding-top: 40px;
+}
+
+.experinceTitle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 15%;
+  height: 1px;
+  background-color: #454e56;
+  transform: translate(-50%);
+}
+
+.experienceContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  padding-bottom: 20px;
+  grid-gap: 20px;
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 70px;
+  border-left: 1px solid #2a2e35;
+}
+
+.iconDiv {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background-color: #30ae64;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
