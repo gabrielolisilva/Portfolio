@@ -11,6 +11,10 @@ body {
   position: relative;
 }
 
+.greenSpan {
+  color: #30ae64;
+}
+
 .section {
   width: 100vw;
   height: 100vh;
@@ -39,10 +43,6 @@ p {
 
 .introDiv p {
   max-width: 700px;
-}
-
-.introDiv span {
-  color: #30ae64;
 }
 
 .btn-CV {
@@ -140,10 +140,6 @@ p {
   text-align: center;
   font-size: 60px;
   text-transform: uppercase;
-}
-
-.aboutDiv span {
-  color: #30ae64;
 }
 
 .about-content {
@@ -323,12 +319,11 @@ p {
 .timelineItem {
   position: relative;
   padding-left: 70px;
-  border-left: 1px solid #2a2e35;
 }
 
 .iconDiv {
   position: absolute;
-  left: -27px;
+  left: 0;
   top: 0;
   background-color: #30ae64;
   width: 50px;
@@ -337,4 +332,124 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fas {
+  color: white;
+  font-size: 20px;
+}
+
+.textExperienceDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.timeline-duration {
+  font-size: 14px;
+  background-color: #2e2e35;
+  padding: 5px;
+  width: 220px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.textExperienceDiv h5 {
+  font-size: 20px;
+  color: white;
+}
+
+.spanExperienceText {
+  color: #b2becd;
+}
+
+/* END OF EXPERIENCE WORK */
+
+.portfolioDiv {
+  margin-top: 60px;
+  margin-left: 175px;
+  margin-right: 175px;
+}
+
+.portfolioTitle {
+  text-align: center;
+  color: white;
+}
+
+.portfolioDiv > p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.portfolioContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 50px;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 15px;
+}
+
+.imageDiv img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.hoverItens {
+  width: 100%;
+  height: 100%;
+  background-color: #30ae64;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.hoverItens h3 {
+  color: white;
+  font-size: 25px;
+}
+
+.hoverItens p {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.icons > a {
+  text-decoration: none;
+  background-color: #191c2b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.fab {
+  font-size: 20px;
+  color: white;
+}
+
+.portfolio-item:hover .hoverItens {
+  opacity: 1;
+  transform: scale(1);
 }
