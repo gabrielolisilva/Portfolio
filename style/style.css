@@ -11,6 +11,10 @@ body {
   position: relative;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .greenSpan {
   color: #30ae64;
 }
@@ -19,6 +23,8 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+/* BEGIN OF INTRO */
 
 .introDiv {
   margin: 100px;
@@ -56,6 +62,10 @@ p {
   border: 1px solid #30ae64;
   padding: 15px 60px 15px 15px;
   border-radius: 50px;
+}
+
+.btn-text {
+  color: white;
 }
 
 .btn-icon {
@@ -112,9 +122,15 @@ p {
   justify-content: center;
 }
 
+.control a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .control i {
   color: #79818c;
-  text-align: center;
   font-size: 25px;
 }
 
@@ -198,6 +214,7 @@ p {
 .skills-content h1 {
   text-align: center;
   color: white;
+  text-transform: uppercase;
 }
 
 .title-bar > h5 {
@@ -295,6 +312,7 @@ p {
   color: white;
   margin-top: 70px;
   padding-top: 40px;
+  text-transform: uppercase;
 }
 
 .experinceTitle::before {
@@ -377,6 +395,7 @@ p {
 .portfolioTitle {
   text-align: center;
   color: white;
+  text-transform: uppercase;
 }
 
 .portfolioDiv > p {
@@ -452,4 +471,81 @@ p {
 .portfolio-item:hover .hoverItens {
   opacity: 1;
   transform: scale(1);
+}
+
+/* END OF PORFOLIO */
+
+.contactDiv {
+  margin-top: 60px;
+  margin-left: 175px;
+  margin-right: 175px;
+}
+
+.contactDiv > h1 {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.contactDiv > p {
+  text-align: center;
+}
+
+.contactContainer {
+  margin-top: 30px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconContact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconContact span {
+  color: white;
+}
+
+.footerIcons {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footerIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #2a2e35;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.footerIcons i {
+  font-size: 25px;
+}
+
+.footerIcons a:hover {
+  background-color: #30ae64;
+}
+
+.footerIcons a:hover i {
+  color: #2a2e35;
 }
