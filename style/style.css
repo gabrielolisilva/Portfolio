@@ -9,6 +9,17 @@
   --eighth-color: #b2becd;
 }
 
+.light-mode {
+  --primary-color: #fff;
+  --second-color: #3b92e4;
+  --third-color: #494b4d;
+  --fourth-color: #6b6a6a;
+  --fifth-color: #e8e8e9;
+  --sixth-color: #868686;
+  --seventh-color: #b7b7b8;
+  --eighth-color: #d5d8db;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +31,7 @@ body {
   background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
   position: relative;
+  transition: all 0.4s ease-in-out;
 }
 
 html {
@@ -100,6 +112,7 @@ p {
 }
 
 .theme-btn {
+  cursor: pointer;
   position: fixed;
   background-color: var(--third-color);
   right: 60px;
@@ -244,7 +257,7 @@ p {
 }
 
 .progress-skill-countent > h5 {
-  color: rgba(175, 175, 175, 0.61);
+  color: var(--fourth-color);
   font-size: 20px;
   padding: 5px;
 }
@@ -396,7 +409,7 @@ p {
 }
 
 .spanExperienceText {
-  color: var(--eighth-color);
+  color: var(--fifth-color);
 }
 
 /* END OF EXPERIENCE WORK */

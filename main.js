@@ -8,3 +8,9 @@ btnsControl.forEach((singleButton) => {
     singleButton.classList.add("active-btn");
   });
 });
+
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+});
