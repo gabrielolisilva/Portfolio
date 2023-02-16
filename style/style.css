@@ -253,7 +253,7 @@ p {
 /* END OF ABOUT ME */
 
 .skills-graph {
-  margin-top: 70px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
@@ -540,6 +540,7 @@ p {
 
 .contactDiv > p {
   text-align: center;
+  margin-top: 20px;
 }
 
 .contactContainer {
@@ -741,5 +742,95 @@ p {
 
   .about-content-left > p {
     font-size: 14px;
+  }
+
+  .infoBox {
+    width: 140px;
+  }
+
+  .infoBox h2 {
+    font-size: 30px;
+  }
+
+  .infoBox h4 {
+    font-size: 20px;
+  }
+
+  .portfolioDiv {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .contactDiv {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 475px) {
+  .introDiv {
+    max-width: 400px;
+  }
+
+  .aboutDiv > h1 {
+    font-size: 40px;
+  }
+
+  .aboutDiv {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .about-content {
+    gap: 15px;
+  }
+
+  .infoBox {
+    width: 100px;
+    height: 130px;
+  }
+
+  .infoBox h4 {
+    font-size: 14px;
+  }
+
+  .timelineItem {
+    padding-left: 0;
+  }
+
+  .iconDiv {
+    display: none;
+  }
+
+  .portfolioDiv {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .contactDiv {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .contactDiv > h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 440px) {
+  .introDiv {
+    max-width: 312px;
+  }
+
+  .about-content-left > p {
+    font-size: 12px;
+  }
+
+  .contactItem {
+    flex-direction: column;
+  }
+
+  .iconContact span {
+    font-size: 18px;
   }
 }
