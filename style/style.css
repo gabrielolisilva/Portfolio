@@ -111,6 +111,27 @@ p {
   color: var(--fourth-color);
 }
 
+.closeOpenBtnDiv {
+  cursor: pointer;
+  position: fixed;
+  background-color: var(--third-color);
+  right: 35px;
+  top: 23px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+.closeOpenBtnDiv > i {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
 .theme-btn {
   cursor: pointer;
   position: fixed;
@@ -678,5 +699,14 @@ p {
 
   .contactDiv > h1 {
     font-size: 50px;
+  }
+
+  .theme-btn,
+  .controls {
+    display: none;
+  }
+
+  .closeOpenBtnDiv {
+    display: flex;
   }
 }
