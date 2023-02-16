@@ -76,6 +76,7 @@ p {
 
 .introDiv p {
   max-width: 700px;
+  text-align: center;
 }
 
 .btn-CV {
@@ -619,9 +620,14 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .about-content-left {
+    overflow-y: hidden;
+  }
+
   .about-content-left > p {
     line-height: 20px;
     overflow-y: hidden;
+    margin: 0 auto;
   }
 }
 
@@ -676,7 +682,7 @@ p {
   }
 
   .about-content-left > p {
-    margin-top: 0px;
+    margin-top: 10px;
   }
 }
 
@@ -708,5 +714,32 @@ p {
 
   .closeOpenBtnDiv {
     display: flex;
+  }
+
+  .about-content-left > p {
+    padding: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .introDiv h1,
+  p {
+    max-width: 350px;
+  }
+
+  .aboutDiv {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .about-content {
+    gap: 20px;
+  }
+
+  .about-content-left > h1 {
+    font-size: 24px;
+  }
+
+  .about-content-left > p {
+    font-size: 14px;
   }
 }
