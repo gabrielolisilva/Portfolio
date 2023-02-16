@@ -14,8 +14,8 @@
   --second-color: #3b92e4;
   --third-color: #494b4d;
   --fourth-color: #6b6a6a;
-  --fifth-color: #e8e8e9;
-  --sixth-color: #868686;
+  --fifth-color: #b3b3b3;
+  --sixth-color: #cfcfcf;
   --seventh-color: #b7b7b8;
   --eighth-color: #d5d8db;
 }
@@ -115,7 +115,7 @@ p {
   cursor: pointer;
   position: fixed;
   background-color: var(--third-color);
-  right: 60px;
+  right: 35px;
   top: 93px;
   width: 60px;
   height: 60px;
@@ -133,7 +133,7 @@ p {
 
 .controls {
   position: fixed;
-  right: 60px;
+  right: 35px;
   top: 220px;
   display: flex;
   flex-direction: column;
@@ -174,12 +174,11 @@ p {
 
 .aboutDiv {
   margin-top: 30px;
-  margin-left: 175px;
-  margin-right: 175px;
+  margin-left: 135px;
+  margin-right: 135px;
 }
 
 .aboutDiv > h1 {
-  position: relative;
   color: var(--fourth-color);
   text-align: center;
   font-size: 60px;
@@ -190,7 +189,7 @@ p {
   height: 70vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 90px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 .about-content-left > h1 {
@@ -199,7 +198,7 @@ p {
 }
 
 .about-content-left > p {
-  margin-top: 70px;
+  margin-top: 20px;
   padding: 0 60px;
   text-align: justify;
 }
@@ -258,7 +257,7 @@ p {
 
 .progress-skill-countent > h5 {
   color: var(--fourth-color);
-  font-size: 20px;
+  font-size: 17px;
   padding: 5px;
 }
 
@@ -471,6 +470,7 @@ p {
 .hoverItens h3 {
   color: var(--fourth-color);
   font-size: 25px;
+  text-align: center;
 }
 
 .hoverItens p {
@@ -536,7 +536,12 @@ p {
 .iconContact {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+}
+
+.iconContact > i {
+  font-size: 14px;
 }
 
 .iconContact span {
@@ -576,4 +581,102 @@ p {
 
 .footerIcons a:hover i {
   color: var(--sixth-color);
+}
+
+@media (max-width: 1500px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .about-content-right {
+    margin: auto;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .portfolioContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-content-left > p {
+    line-height: 20px;
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 1100px) {
+  .experienceContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 1001px) {
+  .portfolioContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 951px) {
+  .introDiv {
+    max-width: 700px;
+  }
+  .introDiv > h1 {
+    font-size: 40px;
+  }
+  .about-content {
+    padding-bottom: 10px;
+  }
+
+  .infoBox {
+    width: 210px;
+    height: 150px;
+  }
+
+  .infoBox > h2 {
+    font-size: 40px;
+  }
+
+  .infoBox > h4 {
+    font-size: 25px;
+  }
+
+  .skills-graph {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 926px) {
+  .aboutDiv {
+    margin-left: 100px;
+  }
+
+  .about-content-left > p {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 860px) {
+  .aboutDiv {
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+  .introDiv {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 710px) {
+  .portfolioDiv,
+  .contactDiv {
+    margin-left: 100px;
+    margin-right: 110px;
+  }
+
+  .contactDiv > h1 {
+    font-size: 50px;
+  }
 }
