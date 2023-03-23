@@ -581,7 +581,12 @@ p {
 }
 
 .iconContact > i {
-  font-size: 14px;
+  height: 25px;
+  width: 25px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .iconContact span {
